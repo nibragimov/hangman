@@ -24,5 +24,5 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 ## Acknowledgements
-1. paper.jpg - <a href="https://www.freepik.com">designed by Efe_Madrid - Freepik.com</a>
+1. paper.jpg (used as background image) - <a href="https://www.freepik.com">designed by Efe_Madrid - Freepik.com</a>
 
