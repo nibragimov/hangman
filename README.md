@@ -9,7 +9,7 @@ I have created the minimalistic design of [Hangman](https://en.wikipedia.org/wik
 the word to guess is represented by a row of question marks, representing each letter of the word. You win the game if you guess the word
 in 10 turns. You lose otherwise. When you stop the game the game calculates your score: the number of wins and losses. In this window, you can clear the scores and start the game again. 
 
-You guess the word by entering letters into text field - one at a time. If you guessed the word in your head, you can click **I know the word** button and enter the whole word into text field.  
+You guess the word by entering letters into text field - one at a time. If you guessed the word in your head, you can click **I know the word!** button and enter the whole word into text field.  
 
 Words are randomly extracted from file words.txt. The file words.txt contains 120 words. When compiling words.txt, I used 4th grade English vocabulary: no informal words, literary words and names.    
 ### Built With
