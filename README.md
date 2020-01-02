@@ -6,8 +6,10 @@ a fun game that I wrote on Java using JavaFX
 ![Hangman-screenshot](/resource/hangman-screenshot.png)
 
 I have created the minimalistic design of [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)) word game. In this game
-the word to guess is represented by a row of question marks, representing each letter of the word. Words are randomly extracted from file words.txt.
-words.txt contains 120 words. When compiling words.txt, I used 4th grade English vocabulary: no informal words, literary words and names.    
+the word to guess is represented by a row of question marks, representing each letter of the word. You win the game if you guess the word
+in 10 turns. You lose otherwise. When you stop the game the game calculates your score: the number of wins and losses. In this window, you can clear the scores and start the game again. 
+
+Words are randomly extracted from file words.txt. The file words.txt contains 120 words. When compiling words.txt, I used 4th grade English vocabulary: no informal words, literary words and names.    
 ### Built With
 The game is written on Java using [JavaFX](https://openjfx.io/) platform.
 
