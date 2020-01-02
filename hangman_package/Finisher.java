@@ -89,7 +89,7 @@ public class Finisher {
         controller.getStop_game().setStyle("-fx-font-family: 'Chewy', cursive;");
         controller.getTxt_field().setStyle("-fx-font-family: 'Chewy', cursive;");
 
-        BackgroundImage myBI= new BackgroundImage(new Image("paper.jpg",600,400,false,true),
+        BackgroundImage myBI= new BackgroundImage(new Image("resource/paper.jpg",600,400,false,true),
                 BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
                 BackgroundSize.DEFAULT);
         controller.getRootpane().setBackground(new Background(myBI));
@@ -118,7 +118,7 @@ public class Finisher {
         score.getLosses().setStyle("-fx-font-family: 'Chewy', cursive;");
         score.getYour_score().setStyle("-fx-font-family: 'Chewy', cursive;");
 
-        BackgroundImage myBI= new BackgroundImage(new Image("paper.jpg",600,400,false,true),
+        BackgroundImage myBI= new BackgroundImage(new Image("resource/paper.jpg",600,400,false,true),
                 BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
                 BackgroundSize.DEFAULT);
         score.getScore_pane().setBackground(new Background(myBI));
