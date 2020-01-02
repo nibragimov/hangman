@@ -1,0 +1,26 @@
+# Hangman
+a fun game that I wrote on Java using JavaFX
+
+## About The Project
+
+![Hangman-screenshot](/resource/hangman-screenshot.png)
+
+I have created the minimalistic design of [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)) word game. In this game
+the word to guess is represented by a row of question marks, representing each letter of the word. Words are randomly extracted from file words.txt.
+words.txt contains 120 words. When compiling words.txt, I used 4th grade English vocabulary: no informal words, literary words and names.    
+### Built With
+The game is written on Java using [JavaFX](https://openjfx.io/) platform.
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Acknowledgements
+1. paper.jpg - <a href="https://www.freepik.com">designed by Efe_Madrid - Freepik.com</a>
+
