@@ -282,7 +282,7 @@ public class Controller {
         finisher.getPlay_again().setStyle("-fx-font-family: 'Chewy', cursive;");
         finisher.getStop_game().setStyle("-fx-font-family: 'Chewy', cursive;");
 
-        BackgroundImage myBI= new BackgroundImage(new Image("paper.jpg",600,400,false,true),
+        BackgroundImage myBI= new BackgroundImage(new Image("resource/paper.jpg",600,400,false,true),
                 BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
                 BackgroundSize.DEFAULT);
         finisher.getFinisher_pane().setBackground(new Background(myBI));
