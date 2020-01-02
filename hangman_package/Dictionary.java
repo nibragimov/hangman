@@ -15,7 +15,7 @@ public class Dictionary {
         FileReader f1 = null;
         BufferedReader b1 = null;
         try {
-            f1 = new FileReader("src/words.txt");
+            f1 = new FileReader("resource/words.txt");
             b1 = new BufferedReader(f1);
 
         } catch (FileNotFoundException e) {
