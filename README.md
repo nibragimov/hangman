@@ -14,6 +14,8 @@ You guess the word by entering letters into text field - one at a time. If you g
 Words are randomly extracted from file words.txt. The file words.txt contains 120 words. When compiling words.txt, I used 4th grade English vocabulary: no informal words, literary words and names.    
 ### Built With
 The game is written on Java using [JavaFX](https://openjfx.io/) platform.
+### What did I learn?
+This project refreshed my knowledge of Java, OOP in Java, creating 2D objects and using dictionaries. Also, I learned how to handle large projects.
 
 ## Contributing
 
