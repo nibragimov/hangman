@@ -32,7 +32,7 @@ public class Main extends Application {
         welcome.getInstruct_2().setStyle("-fx-font-family: 'Chewy', cursive;");
         welcome.getStart_game().setStyle("-fx-font-family: 'Chewy', cursive;");
         //set background
-        BackgroundImage myBI= new BackgroundImage(new Image("paper.jpg",600,400,false,true),
+        BackgroundImage myBI= new BackgroundImage(new Image("resource/paper.jpg",600,400,false,true),
                 BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
                 BackgroundSize.DEFAULT);
         welcome.getWelcome_pane().setBackground(new Background(myBI));
