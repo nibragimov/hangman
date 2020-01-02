@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="score_pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman_package.Score">
+   <children>
+      <Label fx:id="your_score" alignment="CENTER" text="Your score:">
+         <font>
+            <Font name="Harlow Solid Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="wins" text="Wins: 2">
+         <font>
+            <Font name="Kirby no " size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="losses" text="Losses: 5">
+         <font>
+            <Font name="Harlow Solid Italic" size="31.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="play_again" mnemonicParsing="false" onAction="#playAgain" text="New game">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear_score" mnemonicParsing="false" onAction="#clearScore" text="Clear score">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

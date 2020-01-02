@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="finisher_pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman_package.Finisher">
+   <children>
+      <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" text="You lost!!😢">
+         <font>
+            <Font name="Harlow Solid Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="rev_word" alignment="CENTER" contentDisplay="CENTER" text="Word: xlorem">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button id="play_again" fx:id="play_again" mnemonicParsing="false" onAction="#playAgain" text="Play again">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="stop_game" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#stopGame" text="Stop game">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="welcome_pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="7.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman_package.Welcome">
+   <children>
+      <Label fx:id="welcome_title" text="Welcome to Hangman!">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="instruct_1" text="Guess the word in '?'. You can start with guessing its letters.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="instruct_2" text="You have 10 attempts to guess the word.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="start_game" mnemonicParsing="false" onAction="#startGame" text="Start game">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

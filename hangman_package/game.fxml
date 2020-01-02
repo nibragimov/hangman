@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman_package.Controller">
+   <bottom>
+      <VBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="unknown" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="608.0" text="Unknown_word" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="counter" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" text="10 turns left">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txt_field" onAction="#getChar" promptText="Enter the letter ">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="stop_game" mnemonicParsing="false" onAction="#stopGame" text="Stop game">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button id="give_up" fx:id="give_up" mnemonicParsing="false" onAction="#finishGame" pickOnBounds="false" text="Give up">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="input_word" mnemonicParsing="false" onAction="#inputWord" text="I know the word!">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+        </items>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ToolBar>
+   </top>
+   <center>
+      <Canvas fx:id="canvas" height="200.0" width="250.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
