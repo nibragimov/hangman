@@ -1,9 +1,6 @@
 package hangman_package;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Hashtable;
 import java.util.Random;
 
@@ -12,16 +9,11 @@ public class Dictionary {
     //construct dictionary
     public Dictionary() throws IOException {
         dict = new Hashtable<>();
-        FileReader f1 = null;
+        InputStream is = null;
         BufferedReader b1 = null;
-        try {
-            f1 = new FileReader("resource/words.txt");
-            b1 = new BufferedReader(f1);
-
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-            System.exit(1);
-        }
+       
+        is = Main.class.getResourceAsStream("words.txt");
+        b1 = new BufferedReader(new InputStreamReader(is));
         //insert all words from file into dictionary
         String line;
         Integer ind = 1;
@@ -30,7 +22,7 @@ public class Dictionary {
             ind++;
         }
         b1.close();
-        f1.close();
+        is.close();
     }
 
     //pick randomly a word from dictionary
@@ -39,6 +31,5 @@ public class Dictionary {
         Integer key = rand.nextInt(dict.size()) + 1;
         return dict.get(key);
     }
-
 
 }
