@@ -17,6 +17,29 @@ The game is written on Java using [JavaFX](https://openjfx.io/) platform.
 ### What did I learn?
 This project refreshed my knowledge of Java, OOP in Java, creating 2D objects and using dictionaries. Also, I learned how to handle large projects.
 
+### Installation
+1. In resources directory download the .jar file. 
+2. Download an appropriate [JavaFX runtime](https://gluonhq.com/products/javafx/) for your operating system and unzip it to a desired location. Also, make sure you have JDK installed.
+3. Add an environment variable pointing to the lib directory of the runtime:
+
+Windows
+```sh
+set PATH_TO_FX="path\to\javafx-sdk-13\lib"
+```
+Linux/Mac
+```sh
+export PATH_TO_FX=path\to\javafx-sdk-13\lib
+```
+4. Next, run the .jar file:
+
+Windows
+```sh
+java --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml -jar Hangman.jar
+```
+Linux/Mac
+```sh
+java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -jar Hangman.jar
+```
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
